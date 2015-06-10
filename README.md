@@ -15,8 +15,16 @@ Things to think about before developing
 * Collaborate
 * Community
 * Workflow
+* *Performance*
 
+## HTML
 
+## CSS
+
+* DRY vs. WET
+* BEM/OOCSS... Modular
+
+## Javascript
 
 ## Resources
 codepen.io
