@@ -12,7 +12,8 @@
         <link href="/css/index.css" rel="stylesheet" media="screen">
         <link href="/css/print.css" rel="stylesheet" media="print">
 
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-cookies.js"></script>
         <script src="//checkout.stripe.com/checkout.js"></script>
         <script src="/js/index.js"></script>
     </head>
@@ -31,23 +32,27 @@
                     <ul class="locations list">
                         <li>
                             <div class="vcard">
-                                <div class="fn">West Plaza</div>
+                                <div class="fn">Armourdale</div>
                                 <div class="adr">
-                                    <div class="street-address">1234 Address Blvd</div>
-                                    <span class="locality">Kansas City</span>, 
-                                    <span class="region">MO</span>, 
-                                    <span class="postal-code">64112</span>
+                                    <a href="http://maps.apple.com/?daddr=727 Kansas Ave Kansas City, KS 66105">
+                                        <span class="street-address">727 Kansas Ave</span><br />
+                                        <span class="locality">Kansas City</span>, 
+                                        <span class="region">KS</span>, 
+                                        <span class="postal-code">66105</span>
+                                    </a>
                                  </div>
                             </div>
                         </li>
                         <li>
                             <div class="vcard">
-                                <div class="fn">West Plaza</div>
+                                <div class="fn">Crossroads District</div>
                                 <div class="adr">
-                                    <div class="street-address">444 Sunset Ave</div>
-                                    <span class="locality">Kansas City</span>, 
-                                    <span class="region">KS</span>, 
-                                    <span class="postal-code">66106</span>
+                                    <a href="http://maps.apple.com/?daddr=1815 Central Street, Kansas City, MO">
+                                        <span class="street-address">1815 Central Street</span><br />
+                                        <span class="locality">Kansas City</span>, 
+                                        <span class="region">MO</span>, 
+                                        <span class="postal-code">64108</span>
+                                    </a>
                                  </div>
                             </div>
                         </li>
@@ -80,20 +85,21 @@
                     <h2>Available by the Bottle</h2>
                     <p>You can now order Lily's Lemonade by the bottle for you next ballgame or picnic.</p>
                     <form ng-hide="payment">
-                        <button class="button" ng-click="openPayment()">Buy</button>
-                        <input type="number" ng-model="count" />
-                        <span>for</span>
                         <span ng-bind="cost() | currency"></span>
+                        <span>for</span>
+                        <input type="number" ng-model="count" />
+                        <button class="button" ng-click="openPayment()">Buy</button>
                     </form>
                     <div ng-show="payment">Thanks for your payment {{payment.email}}!</div>
                 </div>
             </section>
             
-            <section class="page-section">
+            <section class="page-section" ng-hide="noSubcribe">
                 <div class="page-container">
                     <h2>Stay in Touch</h2>
                     <p>Be the first to know when Lily opens up a new locationor has a special update.</p>
                     <button class="button" ng-click="subscribe()">Subscribe</button>
+                    <button class="button" ng-click="ignoreSubscribe()">No Thanks</button>
                 </div>
             </section>
         </div>

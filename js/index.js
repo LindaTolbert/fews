@@ -1,11 +1,21 @@
 (function(window) {
     
     angular
-        .module('app', [])
-        .controller('AppController', function($scope, $http) {
+        .module('app', ['ngCookies'])
+        .controller('AppController', function($scope, $http, $cookies) {
             
             var costPerBottle = 500;
+            $scope.noSubcribe = $cookies.noSubcribe;
             $scope.count = 1;
+            
+            $scope.$watch("count", function(value) {
+                if (
+                    (value != null && value <= 0 )
+                    || value === undefined
+                ) {
+                    $scope.count = 1;
+                }
+            });
             
             var handler = StripeCheckout.configure({
                 key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
@@ -35,6 +45,11 @@
                     }
                 })
             };
+            
+            $scope.ignoreSubscribe = function() {
+                $scope.noSubcribe = true;
+                $cookies.noSubcribe = true;
+            }
             
         });
     

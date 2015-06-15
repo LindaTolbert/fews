@@ -1,7 +1,6 @@
 # Frontend Development Workshop
 
-Deric Mendez
-github.com/dmdez/fews
+`https://github.com/dmdez/fews`
 
 ## Dependencies for this workshop
 [Cloud 9](c9.io) _or_ [Node](https://nodejs.org/) and Bower `npm install bower -g`
@@ -18,11 +17,11 @@ github.com/dmdez/fews
 ## HTML
 
 * VCard Microformat
-* Images
+* Images (Optimization)
 
 ## Javascript
 
-* Angular
+* Angular http://cdnjs.com/libraries/angular.js/
 * [Stripe Integration](https://stripe.com/docs/checkout#integration-custom)
 
 ## CSS

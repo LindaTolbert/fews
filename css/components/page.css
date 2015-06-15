@@ -1,5 +1,5 @@
 .page-section {
-    padding: 20px;
+    padding: 40px 20px;
 }
 .page-section:nth-child(even) {
     background: #f7f7f7;
