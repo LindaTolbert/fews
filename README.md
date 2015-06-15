@@ -6,11 +6,9 @@ github.com/dmdez/fews
 ## Dependencies for this workshop
 [Cloud 9](c9.io) _or_ [Node](https://nodejs.org/) and Bower `npm install bower -g`
 
-## Intro
+### Development Guidelines
 
-Things to think about before developing
-
-* Understand
+* Understand the product
 * R&D
 * Collaborate
 * Community
@@ -19,13 +17,19 @@ Things to think about before developing
 
 ## HTML
 
-## CSS
-
-* DRY vs. WET
-* BEM/OOCSS... Modular
+* VCard Microformat
+* Images
 
 ## Javascript
 
-## Resources
-codepen.io
+* Angular
+* [Stripe Integration](https://stripe.com/docs/checkout#integration-custom)
+
+## CSS
+
+* DRY (Don't Reapeat Yourself)
+    * BEM/OOCSS... Modular
+* File Organization
+* Normalize
+* Web Fonts (Lato) https://www.google.com/fonts#UsePlace:use/Collection:Lato
 

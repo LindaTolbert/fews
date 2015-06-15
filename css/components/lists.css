@@ -1,0 +1,32 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list li {
+    margin: 0 0 25px;
+}
+.locations li {
+    border: 1px solid #F9D932;
+    padding: 25px;
+}
+
+.features li img {
+    transition: transform .3s;
+}
+.features li:hover img {
+    transform: scale(1.2);
+}
+
+
+@media screen and (min-width: 500px) {
+    .list {
+        display: table;
+        width: 100%;
+        border-spacing: 20px;
+        table-layout: fixed;
+    }
+    .list li {
+        display: table-cell;
+    }
+}

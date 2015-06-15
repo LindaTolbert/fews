@@ -1,0 +1,11 @@
+.page-section {
+    padding: 20px;
+}
+.page-section:nth-child(even) {
+    background: #f7f7f7;
+}
+.page-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
