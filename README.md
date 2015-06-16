@@ -3,8 +3,8 @@
 `https://github.com/dmdez/fews`
 
 ## Dependencies for this workshop
-[Github Account](https://github.com/dmdez/fews)
-[Cloud 9](c9.io)
+* [Github Account](https://github.com/dmdez/fews)
+* [Cloud 9](c9.io)
 
 ### Development Guidelines
 
