@@ -16,7 +16,7 @@
 
 ## HTML
 
-* VCard Microformat
+* [VCard Microformat](http://microformats.org/wiki/hcard)
 * Images (Optimization)
 
 ## Javascript
